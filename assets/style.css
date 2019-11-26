@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ebeae6;
+}
+
+/* Style the header */
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+
+article {
+  float: left;
+  padding: 30px;
+  width: 60%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #011926;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 953px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 537px) {
+  li a {
+    padding: 22px 9px !important;
+  }
+}
+header {
+  background-color: #333;
+}
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  padding: 22px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+img {
+  
+  padding-bottom: 30px;
+}
+article p {
+  font-size: 30px;
+  text-align: center;
+
+}
+footer p {
+  font-size: 30px;
+  padding-top: 30px;
+}
+.button-footer {
+  border-radius: 12px;
+  background-color: #f88e37;
+  border: none;
+  color: white;
+  padding: 20px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+.button-article {
+  border-radius: 12px;
+  background-color: #f88e37;
+  border: none;
+  color: white;
+  padding: 20px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.table {
+  display: table;   /* Allow the centering to work */
+  margin: 0 auto;
+}
